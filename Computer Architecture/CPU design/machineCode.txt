@@ -1,0 +1,44 @@
+// Machine code for test program. 
+// This is the version for the pipeline without hazard detection.
+// 
+// Machine code format is opcode_rd_rn_rm_imm12
+// where the opcode is 8 bits (2 hex digits), rd, rn, and rm are 4 bits each
+// (1 hex digit each), and imm12 is 12 bits (3 hex digits)
+
+0a000000		// 00		mov r0, 0	; addr of array
+0a400000		// 04		mov r4, 0	; i = 0
+0a60000a		// 08		mov r6, 10	; n = 10
+09500000		// 0c		mov r5, r0	; ptr = array addr
+			// Loop1:
+0e046004		// 10		beq r4, r6, Loop1Exit	; while (i != n)
+02440001		// 14		add r4, r4, #1	; i++
+0c054000		// 18		str [r5 + 0], r4 ; array[i] = i+1
+02550004		// 1c		add r5, r5, 4	; ptr++
+0d000ffb		// 20		b   Loop1	; repeat
+			// Loop1Exit:
+09800000		// 24		mov r8, r0	; save addr of array
+0a100005		// 28		mov r1, 5	; n = 5
+10e00006		// 2c		bl  r14, SumArray ; sumArray(array, n)
+0c080028		// 30		str [r8 + 40], r0 ; sum5 = sumArray(array, n)
+09008000		// 34		mov r0, r8	; get addr of array again
+0a10000a		// 38		mov r1, 10	; n = 10
+10e00002		// 3c		bl  r14, SumArray ; sumArray(array, n)
+0c08002c		// 40		str [r8 + 44], r0 ; sum10 = sumArray(array, n)
+			// Halt:
+0d000fff		// 44		b   Halt
+
+			// SumArray:
+09500000		// 48		mov r5, r0	; ptr = array addr
+0a000000		// 4c		mov r0, 0	; sum = 0
+0a400000		// 50		mov r4, 0	; i = 0
+			// SALoop:
+0e041005		// 54		beq r4, r1, SALoopExit	; while (i != n)
+0b350000		// 58		ldr r3, [r5 + 0] ; array[i]
+01003000		// 5c		add r0, r0, r3	; sum += array[i]
+02550004		// 60		add r5, r5, 4	; ptr++
+02440001		// 64		add r4, r4, 1	; i++
+0d000ffA		// 68		b   SALoop	; repeat
+			// SALoopExit:
+110e0000		// 6c		b   r14		; return
+00000000		// 70 		nop
+00000000		// 74		nop

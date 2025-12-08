@@ -14,9 +14,12 @@ The CPU is a fully functional model capable of executing arithmetic, logical, me
 - **Pipeline Stages** including IF, ID, EX, MEM, and WB
 - **Hazard Detection and Forwarding Unit** to manage data and control hazards
 
-![CPU Schematic](github-portfolio/misc/projects/images/CPU.png)
-
 The CPU executes instructions using a 32-bit instruction format, supports immediate and register-based operations, and implements branching, subroutine calls, and returns.
+
+  
+## CPU Schematic 
+![CPU Schematic](Images/CPU.png)
+
 
 ## ALU
 

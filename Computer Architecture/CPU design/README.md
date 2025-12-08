@@ -1,4 +1,4 @@
-# Final CPU Design – SystemVerilog Project
+# CPU Design – SystemVerilog Project
 
 This project presents the design and implementation of a complete 32-bit CPU in SystemVerilog, developed as the culmination of a multi-part lab series. The CPU integrates a wide range of hardware design concepts, including combinational and sequential logic, control units, instruction and data memory, branching, subroutine support, and pipelining with hazard detection. The design was thoroughly tested using simulated CPU and memory models, and verified against a set of machine code programs and test vectors.
 

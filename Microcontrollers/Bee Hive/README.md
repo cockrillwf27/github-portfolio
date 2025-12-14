@@ -83,16 +83,7 @@ All functional design objectives and performance targets were fully met or excee
 
 ---
 
-## Organization of Additional Reports
-
-- **High Level Summary Narrative:** Resources for the final integrated system implementation  
-- **System Team Report:** Team contributions, schematics, and findings  
-- **Detection Team Report:** Detection subsystem contributions, schematics, and findings  
-- **Scare Team Report:** Audio and deterrence subsystem contributions, schematics, and findings  
-
----
-
 ## Video Demonstration
 
-[Narrated system walkthrough](596EC2B6-D350-42FB-A7E5-70618DAF63EC.MP4)
+[Narrated system walkthrough](https://vmiedu-my.sharepoint.com/:v:/r/personal/cockrillwf27_vmi_edu/Documents/596EC2B6-D350-42FB-A7E5-70618DAF63EC.MP4?csf=1&web=1&e=RmDLva&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 

@@ -7,6 +7,13 @@
 This project creates an electronic system to protect fence lines by using elephants’ natural fear of bees, eliminating the need for real beehive maintenance. After detecting elephant proximity or fence disturbance via sensors, the system plays realistic bee sounds, with the volume and pattern of the sounds changing based on detection behavior to effectively scare away elephants.
 
 ---
+## Substation prototype 
+
+<p align="left">
+  <img src="Images/substation.jpg" width="400">
+</p>
+
+---
 
 ## Design and Performance Objectives
 
@@ -82,12 +89,6 @@ All functional design objectives and performance targets were fully met or excee
 - **System Team Report:** Team contributions, schematics, and findings  
 - **Detection Team Report:** Detection subsystem contributions, schematics, and findings  
 - **Scare Team Report:** Audio and deterrence subsystem contributions, schematics, and findings  
-
----
-
-## System Image
-
-**Figure 1.** Substation prototype  
 
 ---
 

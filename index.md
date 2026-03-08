@@ -1,8 +1,4 @@
 
----
-layout: home
-title: Home
----
 
 # Bill Cockrill's Portfolio 
 

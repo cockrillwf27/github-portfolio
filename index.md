@@ -1,6 +1,8 @@
+---
+layout: home
+title: Bill Cockrill's Portfolio
+---
 
-
-# Bill Cockrill's Portfolio 
 
 This GitHub repository showcases a selection of my projects in Electrical and Computer Engineering. It includes work from academic courses and personal interest projects, highlighting my experience with hardware, software, and system-level problem solving.
 

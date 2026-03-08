@@ -1,5 +1,7 @@
-# Computer Architecture 
-
+---
+layout: page
+title: Computer Architecture
+permalink: /Computer Architecture/
 ---
 
 ## Overview

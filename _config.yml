@@ -1,5 +1,6 @@
 title: My Portfolio
-description: A showcase of my projects
+description: A showcase of my projects in Electrical and Computer Engineering
 theme: minima  # This is a simple default theme with navigation
 plugins:
   - jekyll-feed
+  header_pages: [0]
